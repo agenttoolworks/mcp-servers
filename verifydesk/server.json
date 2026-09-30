@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.agenttoolworks/verifydesk",
+  "title": "VerifyDesk",
+  "description": "Verify companies in the French registry, EU VAT numbers and IBANs, and screen US and UN sanctions.",
+  "repository": {
+    "url": "https://github.com/agenttoolworks/mcp-servers",
+    "source": "github",
+    "subfolder": "verifydesk"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://agenttoolworks.com/servers/verifydesk",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://verifydesk.agenttoolworks.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer atw_live_... API key from agenttoolworks.com",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

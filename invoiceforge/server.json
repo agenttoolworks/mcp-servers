@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.agenttoolworks/invoiceforge",
+  "title": "InvoiceForge",
+  "description": "Generate, validate and read EN 16931 and Peppol BIS 3.0 e-invoices, in UBL and CII.",
+  "repository": {
+    "url": "https://github.com/agenttoolworks/mcp-servers",
+    "source": "github",
+    "subfolder": "invoiceforge"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://agenttoolworks.com/servers/invoiceforge",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://invoiceforge.agenttoolworks.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer atw_live_... API key from agenttoolworks.com",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
