@@ -7,7 +7,7 @@ This repository holds the public registry manifests (`server.json`) for each ser
 | Server | Endpoint | What it does |
 |---|---|---|
 | [VerifyDesk](https://agenttoolworks.com/servers/verifydesk) | `https://verifydesk.agenttoolworks.com/mcp` | Company lookup in the French registry, EU VAT validation (VIES), offline IBAN validation, sanctions screening against the OFAC and UN lists |
-| [JobsRadar](https://agenttoolworks.com/servers/jobsradar) | `https://jobsradar.agenttoolworks.com/mcp` | Job search across Greenhouse, Lever, Ashby, Personio and Pinpoint company boards in one call, deduplicated and normalized (Workable too in the [Apify Actor](https://apify.com/agenttoolworks/jobsradar-multi-board-job-search)) |
+| [JobsRadar](https://agenttoolworks.com/servers/jobsradar) | `https://jobsradar.agenttoolworks.com/mcp` | Job search across Greenhouse, Lever, Ashby, SmartRecruiters, Personio and Pinpoint company boards in one call, deduplicated and normalized (Workable too in the [Apify Actor](https://apify.com/agenttoolworks/jobsradar-multi-board-job-search)) |
 | [InvoiceForge](https://agenttoolworks.com/servers/invoiceforge) | `https://invoiceforge.agenttoolworks.com/mcp` | Generate, validate and read EN 16931 and Peppol BIS Billing 3.0 e-invoices (UBL and CII) |
 
 ## Connect
