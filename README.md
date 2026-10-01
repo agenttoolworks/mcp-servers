@@ -38,6 +38,17 @@ Cursor, Windsurf, VS Code and Claude Desktop each use a slightly different confi
 
 Prepaid packs: $10 for 1,000 credits, $45 for 5,000, $80 for 10,000. No subscription, credits never expire. Full [pricing](https://agenttoolworks.com/pricing).
 
+## Also on the Apify Store
+
+Two of our data products also run as Apify Actors, paid per result through Apify, no AgentToolWorks account needed. AI agents can call them through [Apify's hosted MCP server](https://docs.apify.com/platform/integrations/mcp).
+
+| Actor | What it does | Price |
+|---|---|---|
+| [Shopify & WooCommerce Scraper and Price Tracker](https://apify.com/agenttoolworks/shopify-woocommerce-scraper) | Every product of any Shopify or WooCommerce store: variants, SKUs, barcodes, stock, weights, images. Tracks price drops, restocks, new and removed products between runs. [More](https://agenttoolworks.com/scrapers/shopify-woocommerce) | $1.50 per 1,000 products, $0.005 per change |
+| [Job Scraper for Greenhouse, Lever, Ashby & Workable (JobsRadar)](https://apify.com/agenttoolworks/jobsradar-multi-board-job-search) | The JobsRadar search as an Actor, Workable included | $0.90 per 1,000 postings |
+
+MCP clients can load either one with `https://mcp.apify.com?tools=agenttoolworks/shopify-woocommerce-scraper` (an Apify token is required).
+
 ## Reliability
 
 Every server is measured daily against production by an agent scenario suite, and the results are published as measured, including degraded runs: [agenttoolworks.com/status](https://agenttoolworks.com/status).
