@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.agenttoolworks/storecatalog",
+  "title": "Store Catalog",
+  "description": "Shopify and WooCommerce product catalogs for agents: list, search, full product with barcodes.",
+  "repository": {
+    "url": "https://github.com/agenttoolworks/mcp-servers",
+    "source": "github",
+    "subfolder": "storecatalog"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://agenttoolworks.com/scrapers/shopify-woocommerce",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://storecatalog.agenttoolworks.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer atw_live_... API key from agenttoolworks.com",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

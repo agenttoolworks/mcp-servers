@@ -9,10 +9,11 @@ This repository holds the public registry manifests (`server.json`) for each ser
 | [VerifyDesk](https://agenttoolworks.com/servers/verifydesk) | `https://verifydesk.agenttoolworks.com/mcp` | Company lookup in the French registry, EU VAT validation (VIES), offline IBAN validation, sanctions screening against the OFAC and UN lists |
 | [JobsRadar](https://agenttoolworks.com/servers/jobsradar) | `https://jobsradar.agenttoolworks.com/mcp` | Job search across Greenhouse, Lever, Ashby, SmartRecruiters, Personio and Pinpoint company boards in one call, deduplicated and normalized (Workable too in the [Apify Actor](https://apify.com/agenttoolworks/jobsradar-multi-board-job-search)) |
 | [InvoiceForge](https://agenttoolworks.com/servers/invoiceforge) | `https://invoiceforge.agenttoolworks.com/mcp` | Generate, validate and read EN 16931 and Peppol BIS Billing 3.0 e-invoices (UBL and CII) |
+| [Store Catalog](https://agenttoolworks.com/scrapers/shopify-woocommerce) | `https://storecatalog.agenttoolworks.com/mcp` | Read any Shopify or WooCommerce store: list products a page at a time, search by keyword, one product in full with variants, barcodes, stock and weights |
 
 ## Connect
 
-1. Get a key with 100 free credits, no card: [agenttoolworks.com/signup](https://agenttoolworks.com/signup). One key works on all three servers.
+1. Get a key with 100 free credits, no card: [agenttoolworks.com/signup](https://agenttoolworks.com/signup). One key works on every server.
 2. Add a server to your client. Claude Code:
 
 ```bash
@@ -35,12 +36,14 @@ Cursor, Windsurf, VS Code and Claude Desktop each use a slightly different confi
 | JobsRadar | `list_supported_companies` | 0.2 |
 | InvoiceForge | `generate_invoice`, `validate_invoice`, `extract_invoice` | 1 |
 | InvoiceForge | `describe_coverage` | 0.2 |
+| Store Catalog | `list_products`, `get_product`, `search_products` | 1 |
+| Store Catalog | `inspect_store` | 0.2 |
 
 Prepaid packs: $10 for 1,000 credits, $45 for 5,000, $80 for 10,000. No subscription, credits never expire. Full [pricing](https://agenttoolworks.com/pricing).
 
 ## Also on the Apify Store
 
-Two of our data products also run as Apify Actors, paid per result through Apify, no AgentToolWorks account needed. AI agents can call them through [Apify's hosted MCP server](https://docs.apify.com/platform/integrations/mcp).
+Two of our data products also run as Apify Actors (the Store Catalog readers are the same code as its MCP server), paid per result through Apify, no AgentToolWorks account needed. AI agents can call them through [Apify's hosted MCP server](https://docs.apify.com/platform/integrations/mcp).
 
 | Actor | What it does | Price |
 |---|---|---|
